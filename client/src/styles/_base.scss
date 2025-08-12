@@ -1,0 +1,35 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+* { box-sizing: border-box; }
+
+html, body, #root { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: $font-stack;
+  color: $text;
+  background: radial-gradient(1200px 700px at 10% -10%, rgba(255,255,255,.06), transparent 60%),
+              radial-gradient(800px 600px at 110% 10%, rgba(255,255,255,.05), transparent 60%),
+              linear-gradient(135deg, $bg-start 0%, $bg-end 100%);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0);
+  white-space: nowrap; border: 0;
+}
+
+.splash {
+  display: grid; place-items: center;
+  height: 100%;
+  font-size: 18px;
+  color: $muted;
+}

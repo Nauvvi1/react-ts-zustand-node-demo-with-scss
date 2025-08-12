@@ -1,0 +1,8 @@
+@mixin ring($color) {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba($color, .35);
+}
+
+@mixin smooth {
+  transition: all .2s ease;
+}

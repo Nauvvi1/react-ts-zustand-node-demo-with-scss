@@ -1,0 +1,25 @@
+@use './variables';
+@use './mixins';
+@use './base';
+@use './utilities/container';
+@use './components/button';
+@use './components/form';
+@use './components/card';
+@use './components/list';
+
+.app {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100%;
+}
+
+.header {
+  padding: 28px 0 0;
+}
+
+.footer {
+  color: rgba(255,255,255,.6);
+  text-align: center;
+  padding: 32px 0;
+  font-size: 13px;
+}

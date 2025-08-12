@@ -1,0 +1,20 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(255,255,255,.08);
+  color: $text;
+  border: 1px solid $card-stroke;
+  outline: none;
+  @include smooth;
+
+  &::placeholder { color: $muted; }
+  &:focus-visible { @include ring(#a78bfa); }
+}
+
+.form-row {
+  display: flex; gap: 10px;
+}

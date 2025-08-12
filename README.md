@@ -1,9 +1,9 @@
-# React + TypeScript + Zustand + Node.js (Express) — Demo
+# React + TypeScript + Zustand + Node.js (Express)
 
 fullstack-пример: фронт на **React + TS + Zustand (Vite)** и бэкенд на **Node.js + Express + TS**.
 Присутствует: архитектура, стейт‑менеджмент, валидация, качественные хэндлеры и дев‑сценарии.
 
-## Быстрый старт
+## Начать
 
 ```bash
 # 1) Установить зависимости
@@ -18,8 +18,6 @@ npm run dev
 # Клиент: http://localhost:5173
 # API:    http://localhost:4000/api
 ```
-
-> В дев‑режиме Vite проксирует запросы `/api` на порт сервера, так что можно писать `fetch('/api/...')` без CORS‑головной боли.
 
 ## Стек
 - **Client:** React 18, TypeScript, Zustand, Vite

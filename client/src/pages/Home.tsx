@@ -12,7 +12,7 @@ export default function Home() {
     await addTask(title.trim())
     setTitle('')
   }
-
+  
   return (
     <div className="page">
       <header className="header">
